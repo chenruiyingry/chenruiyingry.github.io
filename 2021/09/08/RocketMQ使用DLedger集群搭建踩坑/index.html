@@ -17,13 +17,13 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"blog.ryanchan.cf","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="前因最近生产环境上遇到RocketMQ集群从节点不同步问题，由于一直由公司运维同事负责搭建，不知道原因出在哪里。因此上Github的RocketMQ官方找答案，无意中发现RocketMQ已经更新了新的集群搭建模式，即DLedger集群搭建。经过一番摸索，总结出在Docker搭建DLedger集群。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RocketMQ使用DLedger集群搭建">
-<meta property="og:url" content="http://example.com/2021/09/08/RocketMQ%E4%BD%BF%E7%94%A8DLedger%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/index.html">
+<meta property="og:url" content="http://blog.ryanchan.cf/2021/09/08/RocketMQ%E4%BD%BF%E7%94%A8DLedger%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/index.html">
 <meta property="og:site_name" content="Ryan&#39;s Blog">
 <meta property="og:description" content="前因最近生产环境上遇到RocketMQ集群从节点不同步问题，由于一直由公司运维同事负责搭建，不知道原因出在哪里。因此上Github的RocketMQ官方找答案，无意中发现RocketMQ已经更新了新的集群搭建模式，即DLedger集群搭建。经过一番摸索，总结出在Docker搭建DLedger集群。">
 <meta property="og:locale" content="zh_CN">
@@ -46,7 +46,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/chenruiyingry/BlogImages/img/image-20210908175102922.png">
 
-<link rel="canonical" href="http://example.com/2021/09/08/RocketMQ%E4%BD%BF%E7%94%A8DLedger%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/">
+<link rel="canonical" href="http://blog.ryanchan.cf/2021/09/08/RocketMQ%E4%BD%BF%E7%94%A8DLedger%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/">
 
 
 <script id="page-configurations">
@@ -181,7 +181,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/08/RocketMQ%E4%BD%BF%E7%94%A8DLedger%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/">
+    <link itemprop="mainEntityOfPage" href="http://blog.ryanchan.cf/2021/09/08/RocketMQ%E4%BD%BF%E7%94%A8DLedger%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/chenruiyingry/BlogImages/img/20191217104942.jpg"">
